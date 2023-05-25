@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+
+/* kv */
+
+.kv {
+    position: relative;
+}
+
+.kv_contents {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.sticky_aside {
+    position: sticky;
+    top: 48px;
+}
+
+.transform_item {
+    transition: transform ease-out 1s;
+}
+
+.transform_item__1:hover {
+    transform: translate(30px, 50px);
+}
+
+.transform_item__2:hover {
+    transform:rotate(45deg)
+}
+
+.transform_item__3:hover {
+    transform: scale(1.2);
+}
+
+.transform_item__4:hover {
+    transform: skew(15deg);
+}
+
+.pseudo_btn {
+    position: relative;
+}
+
+.pseudo_btn::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-color: #ff9158;
+    border-width: 2px;
+    border-style: solid solid none none;
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.pseudo_txt {
+    position: relative;
+}
+
+.pseudo_txt::after {
+    content: "Feature";
+    color: #ff9158;
+    opacity: .2;
+    font-size: 60px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
